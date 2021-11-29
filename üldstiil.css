@@ -1,9 +1,9 @@
 /* Font paragraafidel ja linkidel. */
-p, a {
+p, a, b {
     font-family: "Raleway", sans-serif;
 }
 /* Font h2 pealkirjal. */
-h2 {
+h2{
     font-family: "Merriweather", serif;
 }
 /* Taustavärv. */
