@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiba inu - välimus ja iseloom</title>
+    <link href="üldstiil.css" rel="stylesheet">
+    <link href="välimus-iseloom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Pacifico&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menüü">
+        <a class="menüüValikud" href="pealeht.html">Pealeht</a>
+        <a class="menüüValikud" href="ajalugu.html">Ajalugu</a>
+        <a class="menüüValikud" href="tervis.html">Tervis</a>
+    </div>
+    <div class="padding"></div>
+    <div class="rida">
+        <div class="vormistus">
+            <h2>Urajiro</h2>
+            <p>
+                Jaapanikeelne sõna <span>urajiro</span> viitab teatud valgetele märgistustele shiba inudel,
+                mis vastavalt Nihon Ken Hozonkai ehk Nippo tõustandardile peavad olema igal shiba inul.
+                Need märgistused on valge karv koonu külgedel ja põskedel, lõua ja kurgu all, rinnal,
+                kõhul, saba alumisel poolel ning jäsemete sisekülgedel.
+            </p>
+            <p>
+                <span>Urajiro</span> pole valged märgistused saba tipus või jalgadel, kui see esikäppadel
+                ei lähe kaugemale küünarliigesest ning tagakäppadel põlveliigesest, kuid need valged
+                märgistused on lubatud.
+            </p>
+        </div>
+        <div class="vormistus">
+            <img class="urajiro" src="https://www.wikihow.com/images/thumb/3/31/Identify-a-Shiba-Inu-Step-10.jpg/aid11238375-v4-728px-Identify-a-Shiba-Inu-Step-10.jpg.webp" alt="Urajiro">
+        </div>
+    </div>
+    <div class="rida">
+        <div class="vormistus">
+            <h2>Värvus</h2>
+            <p>
+                Shiba inu aktsepteeritavad värvused on: punane, must helepruuni piirdega, haruldane seesami
+                (sealjuures ka must seesam ja punane seesam). Esineb ka üleni valgeid või pinto
+                ehk valgete laikudega shiba inusid, kuid neid pole lubatud koertenäitustele.
+            </p>
+            <br>
+            <br>
+            <h2>Iseloom</h2>
+            <p>
+                Looduses võivad nad olla energilised ning selle ja tugeva jahiinstinkti tõttu tuleks olla
+                ettevaatlik neid rihmast lahti lastes, kui neid ei ümbritse aed.
+                Kodus olles on nad rahulikumad. Shiba inusid võib pidada linnakorteris, kuna nad on
+                puhtad ning ei haugu tihti.
+            </p>
+        </div>
+        <br>
+        <br>
+        <!-- Galerii algus. https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+        <div class="galerii vormistus">
+            <!-- Pildid koos nende numbrijärjestusega. -->
+            <div class="slaidid">
+                <div class="mitmesSlaid">1 / 5</div>
+                <img class="pildid" src="https://cdn.britannica.com/67/159867-050-89C3FAAE/Shiba-inu.jpg">
+            </div>
+            <div class="slaidid">
+                <div class="mitmesSlaid">2 / 5</div>
+                <img class="pildid" src="https://www.celticstarkennels.com/wp-content/uploads/2020/04/Screenshot_20200430_224639.jpg">
+            </div>
+            <div class="slaidid">
+                <div class="mitmesSlaid">3 / 5</div>
+                <img class="pildid" src="https://i.pinimg.com/originals/a9/ce/de/a9cede397f8e2bc5da61a0ef7c2b6d4c.jpg">
+            </div>
+            <div class="slaidid">
+                <div class="mitmesSlaid">4 / 5</div>
+                <img class="pildid" src="https://i.pinimg.com/originals/44/70/1a/44701a969303bbbbd50af378300c5a8f.jpg">
+            </div>
+            <div class="slaidid">
+                <div class="mitmesSlaid">5 / 5</div>
+                <img class="pildid" src="https://external-preview.redd.it/4lnq6-nA6kgAGv3_7j_rcfkuY5drg0Txg3lvlSiIsFk.jpg?width=960&crop=smart&auto=webp&s=5fcc52fc965ae9ba5a2d65ba9a0f128539eb34e4">
+            </div>
+
+            <!-- Edasi-tagasi nupud. -->
+            <a class="eelmine kursor" onclick="slaidPlus(-1)">&#10094;</a>
+            <a class="järgmine kursor" onclick="slaidPlus(1)">&#10095;</a>
+            	
+            <!-- Millist koera näidatakse ehk pilti seletav tekst. -->
+            <div class="tekstiHoidja">
+                <p class="tekstiHoidja" id="pildiTekst"></p>
+            </div>
+
+            <!-- Alumised pildid. -->
+            <div class="rida">
+                <div class="veerg">
+                    <img class="läbipaistev kursor eelvaatePildid" src="https://cdn.britannica.com/67/159867-050-89C3FAAE/Shiba-inu.jpg"
+                    onclick="praeguneSlaid(1)" alt="Punane shiba inu">
+                </div>
+                <div class="veerg">
+                    <img class="läbipaistev kursor eelvaatePildid" src="https://www.celticstarkennels.com/wp-content/uploads/2020/04/Screenshot_20200430_224639.jpg"
+                    onclick="praeguneSlaid(2)" alt="Must helepruuni piirdega shiba inu">
+                </div>
+                <div class="veerg">
+                    <img class="läbipaistev kursor eelvaatePildid" src="https://i.pinimg.com/originals/a9/ce/de/a9cede397f8e2bc5da61a0ef7c2b6d4c.jpg"
+                    onclick="praeguneSlaid(3)" alt="Seesami shiba inu">
+                </div>
+                <div class="veerg">
+                    <img class="läbipaistev kursor eelvaatePildid" src="https://i.pinimg.com/originals/44/70/1a/44701a969303bbbbd50af378300c5a8f.jpg"
+                    onclick="praeguneSlaid(4)" alt="Valge shiba inu">
+                </div>
+                <div class="veerg">
+                    <img class="läbipaistev kursor eelvaatePildid" src="https://external-preview.redd.it/4lnq6-nA6kgAGv3_7j_rcfkuY5drg0Txg3lvlSiIsFk.jpg?width=960&crop=smart&auto=webp&s=5fcc52fc965ae9ba5a2d65ba9a0f128539eb34e4"
+                    onclick="praeguneSlaid(5)" alt="Pinto shiba inu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="välimus-iseloom.js"></script>
+</body>
+</html>

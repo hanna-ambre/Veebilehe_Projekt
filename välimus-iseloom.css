@@ -1,0 +1,110 @@
+/* Teeb valitud teksti kaldkirja vormi. */
+span {
+    font-style: italic
+}
+/* Teeb pildi vajalikuks suuruseks. */
+img.urajiro {
+    padding-top: 10px;
+    width: 80%;
+    height: 80%;
+}
+/* Lehe jagamine kaheks. */
+.vormistus {
+    float: left;
+    width: 50%;
+}
+/* Lükkab teksti kokkupoole. */
+h2, p {
+    padding-left: 20px;
+    width: 90%;
+}
+
+
+/* Slaidid. https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+
+/* Galerii positsioon. */
+.galerii {
+    position: relative;
+    float: right;
+    width: 50%;
+}
+/* Galerii jaoks peavad pildid olema teatud suurusega.*/
+.pildid {
+    width: 100%;
+    max-height: 400px;
+}
+/* Eelvaate jaoks peavad pildid olema teatud suurusega.*/
+.eelvaatePildid {
+    width: 100%;
+    clip: 100%;
+    max-height: 82px;
+}
+/* Peidab kõik pildid. */
+.slaidid {
+    display: none;
+}
+/* Näitab, mitmes slaid on. */
+.mitmesSlaid {
+    color: #000000;
+    background-color: rgb(255, 242, 221);
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* Kursori muutus kui asja peal, mida saab vajutada. */
+.kursor {
+    cursor: pointer;
+}
+/* Edasi-tagasi nupud. */
+.eelmine, .järgmine {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* 'Järgmine' nupu asetamine paremale. */
+.järgmine {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Kui kursorit edasi-tagasi nuppude peale panna, siis tekib läbipaistev taust. */
+.eelmine:hover, .järgmine:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Pildi all olev tekst. */
+.tekstiHoidja {
+    text-align: center;
+    background-color: rgb(114, 86, 65);
+    padding: 2px 12px;
+    color: white;
+}
+/* Alumiste eelvaate piltide rida. */
+.rida:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Alumiste eelvaate piltide veergudena. */
+.veerg {
+    float: left;
+    width: 20%;
+}
+/* Eelvaate pildid on natuke läbipaistvad. */
+.läbipaistev {
+    opacity: 0.7;
+}
+/* Eelvaate pildid pole läbipaistvad, kui nad on vajutatud või kursor on nende peal. */
+.aktiivne, .läbipaistev:hover {
+    opacity: 1;
+}
