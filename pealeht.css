@@ -1,6 +1,5 @@
 /* Pealkiri keset lehte. */
 h1 {
-    vertical-align: middle;
     text-align: center;
     font-family: Pacifico, cursive;
     font-size: 150px;
@@ -18,14 +17,14 @@ h1 {
     padding: 10px;
     border-radius: 15px;
 }
-/* Vahelehtede linkide kolmeks jagamiseks ekraanil. */
+/* Vahelehtede linkide kolmeks jagamine ekraanil. */
 .lingiRida:after {
     content: "";
     display: table;
     clear: both;
 }
-/* Lehe jagamine kolmeks. */
-.vormistus {
+/* Vahelehtede linkide jagamine kolmeks. */
+.lingiVormistus {
     float: left;
     padding-left: 15%;
 }
