@@ -1,0 +1,31 @@
+/* Pealkiri keset lehte. */
+h1 {
+    vertical-align: middle;
+    text-align: center;
+    font-family: Pacifico, cursive;
+    font-size: 150px;
+    color: rgb(82, 62, 48);
+    border-radius: 360px;
+    background-color: rgb(255, 244, 235);
+}
+/* Pealehe menüü kujundus. */
+.vahelehtedeLingid {
+    color: rgb(255, 244, 235);
+    background-color: rgb(114, 86, 65);
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* Vahelehtede linkide kolmeks jagamiseks ekraanil. */
+.lingiRida:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Lehe jagamine kolmeks. */
+.vormistus {
+    float: left;
+    padding-left: 15%;
+}
