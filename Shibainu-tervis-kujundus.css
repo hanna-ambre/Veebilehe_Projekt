@@ -1,0 +1,21 @@
+.justify{
+    text-align: justify;
+}
+/* pildi kujundus */
+.image{
+    width: 350px;
+    height: 253px;
+    float:right;
+    margin: 40px;
+}
+/*video suurus */
+.video{
+    float:right;
+    margin: 50px;
+    width: 35%; 
+    height: 250px;
+}
+/*lisab taandrea */
+.tab{
+    margin-left: 40px;
+}
