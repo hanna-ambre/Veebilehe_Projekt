@@ -1,17 +1,13 @@
 /* https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 
-/* Lehte avades avab slaidišou esimese pildi. */
-var slaidIndeks = 1
-näitaSlaide(slaidIndeks);
-
 /* Edasi-tagasi nuppude funktsioon. */
 function slaidPlus(n) {
-    näitaSlaide(slaidIndeks += n)
+    näitaSlaide(slaidIndeks += n);
 }
 
 /* Eelvaate piltidelt slaidi valimise funktsioon. */
 function praeguneSlaid(n) {
-    näitaSlaide(slaidIndeks = n)
+    näitaSlaide(slaidIndeks = n);
 }
 
 /* Slaidide näitamise funktsioon. */
@@ -32,3 +28,7 @@ function näitaSlaide(n) {
     eelvaade[slaidIndeks-1].className += " aktiivne";
     tekst.innerHTML = eelvaade[slaidIndeks-1].alt;
 }
+
+/* Lehte avades avab slaidišou esimese pildi. */
+var slaidIndeks = 1;
+näitaSlaide(slaidIndeks);

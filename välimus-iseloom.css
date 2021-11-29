@@ -36,7 +36,6 @@ h2, p {
 /* Eelvaate jaoks peavad pildid olema teatud suurusega.*/
 .eelvaatePildid {
     width: 100%;
-    clip: 100%;
     max-height: 82px;
 }
 /* Peidab kõik pildid. */
